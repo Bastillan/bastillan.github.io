@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-them="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,23 +9,150 @@
 <body>
     <header class="container">
         <h1>Bastillan</h1>
+        <nav aria-label="breadcrumb">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#personal" class="contrast">Personal</a></li>
+                <li><a href="#university" class="contrast">University</a></li>
+                <li><a href="#individual" class="secondary">Individual</a></li>
+                <li><a href="#group" class="secondary">Group</a></li>
+                <li><a href="#more" class="contrast">More</a></li>
+            </ul>
+        </nav>
     </header>
     <main class="container">
         <section>
-            <h2>About</h2>
-            <p>This is a simple test webpage using Pico CSS.</p>
+            <h2 id="about">About me</h2>
+            <article>
+                <h5>Hello, I am Bastillan.</h5>
+                <p>I am a third-year Computer Science student at the Warsaw University of Technology.</p>
+                <p>I am passionate about Software Engineering, C++ and Python. I am also interested in the applications of Artificial Intelligence.</p>
+                <p>Moreover, I am a novice Emacs enthusiast.</p>
+            </article>
         </section>
+        <hr>
         <section>
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="https://github.com/Bastillan/bastillan.github.io">GitHub</a></li>
-            </ul>
-        <section>
-
+            <details open>
+                <summary><h2>Skills</h2></summary>
+                <ul>
+                    <li>Programming languages: C++, Python, C#, JavaScript, TypeScript, SQL</li>
+                    <li>Technologies: Git, Docker, ASP.NET, React, Bootstrap, Selenium</li>
+                    <li>Tools: Visual Studio Code, Visual Studio, Emacs</li>
+                </ul>
+        </section>
+        <hr>
+        <section id="projects">
+            <h2 >Projects</h2>
+            <p>Here are some of my coding projects:</p>
+            <article id="personal">
+                <h3>Personal</h3>
+                <div class="grid">
+                    <details>
+                        <summary role="button">Epic Game</summary>
+                        <article>
+                            The most epic terminal game you have ever played. Written in C++ for Windows.
+                            <footer>
+                                <a href="https://github.com/Bastillan/Epic-Game">Repo</a>
+                            </footer>
+                        </article>
+                    </details>
+                    <details>
+                        <summary role="button">CRBR Scraper</summary>
+                        <article>
+                            Web scraping app that collects data associated with family foundations from CRBR registry. Written in Python using Selenium.
+                        </article>
+                    </details>
+                    <details>
+                        <summary role="button">Portfolio</summary>
+                        <article>
+                            My personal portfolio website. Written in HTML and styled using Pico CSS.
+                            <footer>
+                                <a href="https://github.com/Bastillan/bastillan.github.io">Repo</a>
+                            </footer>
+                        </article>
+                    </details>
+                </div>
+            </article>
+            <article id="university">
+                <h3>University</h3>
+                <article id="individual">
+                    <h4>Individual</h4>
+                    <div class="grid">
+                        <details>
+                            <summary role="button">Library</summary>
+                            <article>
+                                <p>Simple library system. Written in two configurations:</p>
+                                <ul>
+                                    <li>ASP.NET MVC</li>
+                                    <li>React TS + ASP.NET Web API</li>
+                                </ul>
+                                <p>Both versions use Entity Framework and are styled using Bootstrap.</p>
+                                <footer>
+                                    <a href="https://github.com/Bastillan/library">Repo</a>
+                                </footer>
+                            </article>
+                        </details>
+                        <details>
+                            <summary role="button">Bresenham</summary>
+                            <article>
+                                <p>Assembly implementation of Bresenham's line drawing algorithm. Written for RISC-V, x86-32 and x86-64.</p>
+                                <footer>
+                                    <a href="https://github.com/Bastillan/bresenham">Repo</a>
+                                </footer>
+                            </article>
+                        </details>
+                        <details>
+                            <summary role="button">Angry non-Birds</summary>
+                            <article>
+                                <p>Simple clone of Angry Birds game. Written in Python using Pygame and Pymunk.</p>
+                                <footer>
+                                    <a href="https://github.com/Bastillan/angry_non_birds">Repo</a>
+                                </footer>
+                            </article>
+                        </details>
+                    </div>
+                </article>
+                <article id="group">
+                    <h4 id="group">Group</h4>
+                    <div class="grid">
+                        <details>
+                            <summary role="button">Graph visualization</summary>
+                            <article>
+                                Plugin extendable graph visualization app supporting GraphML format. Written in C++ and Python.
+                                <footer>
+                                    <a href="https://github.com/Bastillan/graph_visualization">Repo</a>
+                                </footer>
+                            </article>
+                        </details>
+                        <details>
+                            <summary role="button">P2P</summary>
+                            <article>
+                                Peer-to-peer file sharing terminal app. Written in Python using sockets.
+                            </article>
+                        </details>
+                        <details>
+                            <summary role="button">Location-based games</summary>
+                            <article>
+                                Web app that allows users to participate in location-based games. Written in React JS, Django and PostgreSQL.
+                            </article>
+                        </details>
+                        <details>
+                            <summary role="button">Game offers</summary>
+                            <article>
+                                App showing special offers from gaming platforms. Written in Java using JavaFX and Azure SQL.
+                            </article>
+                        </details>
+                    </div>
+                </article>
+            </article>
+            <h3 id="more">More</h3>
+            <p>For more projects, visit my <a href="https://github.com/Bastillan?tab=repositories">GitHub</a>.</p>
         </section>
     </main>
-    <footer class="container">
-        <small>@Bastillan 2025</small>
+    <footer id="footer" class="container">
+        <small><a href="#footer">@</a>Bastillan 2025</small>
     </footer>
 </body>
 </html>
